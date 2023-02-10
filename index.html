@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Gustavo MS">
+    <title>WB - Time Converter and Calculator</title>
+    <link rel="stylesheet" href="./css/bs4.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/img/ic.ico">
+</head>
+
+<body>
+    <header>
+        <section class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">WB - Time Converter and Calculator</span>
+        </section>
+    </header>
+    <main>
+        <section class="container mt-5">
+            <section class="row">
+                <article class="col-md-6 mt-5 bg-light p-5 rounded box">
+                    <section class="container  ">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Horas &harr; Horas e Minutos &harr; Minutos</h4>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="hoursTime">Tempo em Horas</label>
+                                <input type="number" name="" id="hoursTime" value="0" placeholder="Tempo em h, ex: 1.17"
+                                    class="form-control" />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="hoursAndMinutes">Tempo em Horas e Minutos</label>
+                                <input type="text" id="hoursAndMinutes" class="form-control" placeholder="Ex: 13:17" />
+                            </div>
+                            <div class="col-md-12">
+                                <label for="minutes">Tempo em Minutos</label>
+                                <input type="number" max="" id="minutes" class="form-control"
+                                    placeholder="Tempo em min, ex: 120" />
+                            </div>
+                        </div>
+                    </section>
+                </article>
+                <article class="col-md-6 mt-5   bg-light p-5 rounded box">
+                    <section class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Tempo A <span id="opdisplay">-</span> Tempo B</h4>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <article class="col-md-6">
+                                <label for="finalTime">Tempo A</label>
+                                <input type="text" id="finalTime" class="form-control" placeholder="hh:mm">
+                            </article>
+                            <article class="col-md-6">
+                                <label for="startTime">Tempo B</label>
+                                <input type="text" id="startTime" class="form-control" placeholder="hh:mm" />
+                            </article>
+                            <article class="col-md-12">
+                                <div class="form-group">
+                                    <label for="result">Resultado</label>
+                                    <input type="text" id="result" class="form-control" readonly placeholder="" />
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="form-check">
+                                    <input type="radio" checked name="operations" id="subtract" class="form-check-input"
+                                        value="-">
+                                    <label for="subtract" class="form-check-label">Subtrair</label>
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="form-check">
+                                    <input type="radio" name="operations" id="sum" class="form-check-input" value="+">
+                                    <label for="sum" class="form-check-label">Somar</label>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </article>
+            </section>
+        </section>
+    </main>
+    <script src="./js/calculator.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bs4.js"></script>
+</body>
+
+</html>
