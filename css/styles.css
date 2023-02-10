@@ -1,0 +1,9 @@
+#opdisplay{
+    width: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.box{
+    border: solid 5px white    
+}
